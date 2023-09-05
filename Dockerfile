@@ -25,7 +25,7 @@ RUN pip install -U openai-whisper
 RUN pip3 uninstall -y torch
 RUN pip3 cache purge
 RUN pip install -U cuda-python
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 WORKDIR /app/
 ENV OPENAI_API_KEY ""
 ENV PREFIX_ENABLED ""
